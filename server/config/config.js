@@ -21,7 +21,7 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
 } else {
-    urlDB = 'mongodb://cafe-user:cafeuser123@ds253871.mlab.com:53871/cafenodejs';
+    urlDB = process.env.MONGO_URI; //MONGO_URI es variable de entorno de heroku. Tiene el enlace a la bd en nube
 }
 
 process.env.URLDB = urlDB;
