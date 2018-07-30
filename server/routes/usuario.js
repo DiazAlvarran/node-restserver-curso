@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt'); // para encriptar los passwords
 const _ = require('underscore');
 
 const Usuario = require('../models/usuario');

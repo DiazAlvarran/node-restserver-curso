@@ -54,4 +54,4 @@ usuarioSchema.methods.toJSON = function() { //retornamos un objecto que no tiene
 
 usuarioSchema.plugin(uniqueValidator, { message: '{PATH} debe de ser único' });
 
-module.exports = mongoose.model('usuario', usuarioSchema);
+module.exports = mongoose.model('Usuario', usuarioSchema);
