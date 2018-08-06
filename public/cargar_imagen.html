@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Google Sign-In Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <meta name="google-signin-client_id" content="749284339469-j5e30cdmh0qi77gjgotbsg28q22vtti0.apps.googleusercontent.com">
+
+</head>
+
+<body>
+
+    <form ref='uploadForm' id='uploadForm' action='http://localhost:3000/upload' method='POST' encType="multipart/form-data">
+        <input type="file" name="archivo" />
+        <input type='submit' value='Upload!' />
+    </form>
+
+
+</body>
+
+</html>
